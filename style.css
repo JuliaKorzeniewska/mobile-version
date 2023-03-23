@@ -1,0 +1,325 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 92%;
+  margin: 0 auto;
+}
+
+/*Nawigacja*/
+
+.navbar {
+  height: 50px;
+  background: #8e0103;
+  display: flex;
+  align-items: center;
+}
+.company-name {
+  font-weight: 700;
+  float: left;
+}
+.nav-links {
+  display: none;
+}
+a {
+  text-decoration: none;
+  color: #f5e2c8;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Zdjęcie i tekst główny*/
+
+.header {
+  height: calc(80vh - 50px);
+  background-image: url(assets/header-picture.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.shadow {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.header .container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.heading {
+  width: 90%;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: #f5e2c8;
+}
+
+.par-head {
+  font-weight: bold;
+  color: #f5e2c8;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.offer-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 41px;
+  width: 164px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #f5e2c8;
+  border: 3px solid #f5e2c8;
+  text-decoration: none;
+  transition: 1s;
+}
+
+/*Nasi specjaliści*/
+
+.specialists,
+.offers {
+  padding: 50px 0;
+}
+
+.specialists {
+  background-color: #8e0103;
+}
+
+.specialists h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: #f5e2c8;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.offers {
+  background-color: #f5e2c8;
+}
+
+.specialist-img {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.specialist {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.specialists-info-wraper {
+  color: #f5e2c8;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.name {
+  font-weight: 700;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.description {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: justify;
+  line-height: 21px;
+}
+
+.specialist:nth-of-type(odd) .specialist-img {
+  background-image: url(assets/user1.jpg);
+  margin-bottom: 20px;
+}
+
+.specialist:nth-of-type(even) .specialist-img {
+  background-image: url(assets/user2.jpg);
+  margin-bottom: 20px;
+}
+
+/*Usługi*/
+
+.offers h2 {
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 42px;
+  color: #8e0103;
+  margin-bottom: 50px;
+}
+.wrapper {
+  display: grid;
+  gap: 60px;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.square {
+  position: relative;
+  width: 330px;
+  height: 330px;
+  background: #8e0103;
+  color: #f5e2c8;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.circle {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background: #f48c06;
+  border-radius: 50%;
+  top: -11px;
+  left: -11px;
+}
+
+.new-offer::after {
+  content: "\A(nowość)";
+  white-space: pre-wrap;
+}
+/*stopka*/
+footer {
+  background: #8e0103;
+  height: 147px;
+  display: flex;
+  align-items: center;
+  color: #f5e2c8;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-footer {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  font-size: 25px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.social-icons i {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    grid-template-columns: auto auto;
+  }
+  .text-footer,
+  .name,
+  .par-head {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+  .header {
+    height: calc(100vh - 50px);
+  }
+  .nav-links {
+    float: right;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .offers-m {
+    margin: 0 46px;
+  }
+  .disabled {
+    cursor: not-allowed;
+  }
+  .heading {
+    width: 60%;
+  }
+  .specialist {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+  .description {
+    text-align: unset;
+  }
+  .specialist:nth-of-type(even) {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+  .specialists,
+  .offers {
+    padding: 50px 0;
+  }
+  .offers h2 {
+    font-size: 36px;
+    margin-bottom: 80px;
+  }
+  .wrapper {
+    grid-template-columns: auto auto auto;
+  }
+  .square {
+    width: 200px;
+    height: 200px;
+  }
+  footer {
+    height: 71px;
+  }
+  .footer-content {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .text-footer {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  .offer-btn:hover {
+    background: #f5e2c8;
+    color: #8e0103;
+  }
+  .square {
+    transition: 0, 5s;
+  }
+  .square:hover {
+    transform: scale(1.05);
+  }
+  .specialists-info-wraper {
+    width: 70%;
+  }
+}
