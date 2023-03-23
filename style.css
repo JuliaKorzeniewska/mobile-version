@@ -1,7 +1,6 @@
 html {
   scroll-behavior: smooth;
 }
-
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -36,10 +35,10 @@ ul {
   padding: 0;
 }
 
-/* Zdjęcie i tekst główny*/
+/*Zdjecię + Tekst*/
 
 .header {
-  height: calc(80vh - 50px);
+  height: calc(100vh - 50px);
   background-image: url(assets/header-picture.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -87,7 +86,7 @@ ul {
   transition: 1s;
 }
 
-/*Nasi specjaliści*/
+/*O nas*/
 
 .specialists,
 .offers {
@@ -157,13 +156,13 @@ ul {
   margin-bottom: 20px;
 }
 
-/*Usługi*/
+/*Oferta*/
 
 .offers h2 {
   text-align: center;
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 42px;
   color: #8e0103;
   margin-bottom: 50px;
@@ -206,7 +205,8 @@ ul {
   content: "\A(nowość)";
   white-space: pre-wrap;
 }
-/*stopka*/
+/*Stopka*/
+
 footer {
   background: #8e0103;
   height: 147px;
@@ -238,6 +238,12 @@ footer {
   margin-left: 10px;
 }
 
+@media screen and (min-width: 375px) {
+  .text-footer {
+    font-size: 15px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .wrapper {
     grid-template-columns: auto auto;
@@ -252,13 +258,15 @@ footer {
   .container {
     max-width: 960px;
   }
-  .header {
-    height: calc(100vh - 50px);
-  }
   .nav-links {
     float: right;
     display: flex;
     justify-content: space-between;
+  }
+  .text-footer,
+  .name,
+  .par-head {
+    font-size: 18px;
   }
 
   .offers-m {
