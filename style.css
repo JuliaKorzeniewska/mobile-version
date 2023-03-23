@@ -22,9 +22,6 @@ body {
   font-weight: 700;
   float: left;
 }
-.nav-links {
-  display: none;
-}
 a {
   text-decoration: none;
   color: #f5e2c8;
@@ -33,9 +30,21 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: flex-end;
 }
 
-/*Zdjecię + Tekst*/
+.nav-links li {
+  display: none;
+}
+.fa-bars {
+  display: flex;
+  justify-content: flex-end;
+  color: #f5e2c8;
+  font-size: 18px;
+}
+
+/*Zdjęcie + Tekst*/
 
 .header {
   height: calc(100vh - 50px);
@@ -329,5 +338,11 @@ footer {
   }
   .specialists-info-wraper {
     width: 70%;
+  }
+  .nav-links i {
+    display: none;
+  }
+  .nav-links li {
+    display: flex;
   }
 }
