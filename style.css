@@ -127,6 +127,7 @@ ul {
   height: 200px;
   background-size: cover;
   border-radius: 50%;
+  margin-bottom: 20px;
 }
 
 .specialist {
@@ -144,6 +145,7 @@ ul {
 }
 
 .name {
+  font-size: 18px;
   font-weight: 700;
   margin-bottom: 30px;
   display: flex;
@@ -159,12 +161,10 @@ ul {
 
 .specialist:nth-of-type(odd) .specialist-img {
   background-image: url(assets/user1.jpg);
-  margin-bottom: 20px;
 }
 
 .specialist:nth-of-type(even) .specialist-img {
   background-image: url(assets/user2.jpg);
-  margin-bottom: 20px;
 }
 
 /*Offers*/
@@ -270,7 +270,6 @@ footer {
     max-width: 960px;
   }
   .nav-links {
-    float: right;
     display: flex;
     justify-content: space-between;
   }
@@ -298,6 +297,9 @@ footer {
   .description {
     text-align: unset;
   }
+  .name {
+    display: unset;
+  }
   .specialist:nth-of-type(even) {
     flex-direction: row-reverse;
     text-align: right;
@@ -306,7 +308,11 @@ footer {
   .offers {
     padding: 50px 0;
   }
+  .specialists h2 {
+    text-align: left;
+  }
   .offers h2 {
+    text-align: left;
     font-size: 36px;
     margin-bottom: 80px;
   }
