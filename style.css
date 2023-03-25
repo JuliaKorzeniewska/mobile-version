@@ -10,17 +10,20 @@ body {
   margin: 0 auto;
 }
 
-/*Nawigacja*/
+/*Navigation*/
 
 .navbar {
   height: 50px;
   background: #8e0103;
+}
+.navbar .container {
+  height: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .company-name {
   font-weight: 700;
-  float: left;
 }
 a {
   text-decoration: none;
@@ -44,7 +47,7 @@ ul {
   font-size: 18px;
 }
 
-/*Zdjęcie + Tekst*/
+/*Photo + text*/
 
 .header {
   height: calc(100vh - 50px);
@@ -76,8 +79,7 @@ ul {
 .par-head {
   font-weight: bold;
   color: #f5e2c8;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 40px 0;
 }
 
 .offer-btn {
@@ -95,7 +97,7 @@ ul {
   transition: 1s;
 }
 
-/*O nas*/
+/*About*/
 
 .specialists,
 .offers {
@@ -165,7 +167,7 @@ ul {
   margin-bottom: 20px;
 }
 
-/*Oferta*/
+/*Offers*/
 
 .offers h2 {
   text-align: center;
@@ -214,7 +216,7 @@ ul {
   content: "\A(nowość)";
   white-space: pre-wrap;
 }
-/*Stopka*/
+/*Footer*/
 
 footer {
   background: #8e0103;
@@ -331,7 +333,7 @@ footer {
     color: #8e0103;
   }
   .square {
-    transition: 0, 5s;
+    transition: 0.5s;
   }
   .square:hover {
     transform: scale(1.05);
